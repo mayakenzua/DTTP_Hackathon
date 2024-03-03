@@ -136,3 +136,20 @@ footer {
     text-align: center;
     padding: 10px;
 }
+
+.container {
+    position:absolute;
+    left: 15vw;
+    top: 170px;
+    width: 40vw;
+    height: 60vh;
+    background: #fff;
+    text-align: center;
+}
+
+.map {
+    position: left;
+    display: inline-flex;
+    margin-left: 980px;
+    height: 79vh;
+}
