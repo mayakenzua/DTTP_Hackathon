@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Website</title>
+     <!-- Link to your CSS stylesheet -->
+     <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1> FlexCity </h1>
+    <!-- </header> -->
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="2-index.html">Page 2</a>
+    </nav>
+
+    <section>
+        <h2>Welcome to the Home Page</h2>
+        <p>This is a simple two-page website.</p>
+    </section>
+<!-- Map container -->
+
+<div id="map"></div>
+
+<script src="script.js"> </script>
+
+<!-- Load the Google Maps API with your API key -->
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+    
+<!-- Button 1 -->
+<button onclick="redirectToPage('index.html')">Go to Page 1</button>
+
+<!-- Button 2 -->
+<button onclick="redirectToPage('2-index.html')">Go to Page 2</button>
+
+<script>
+    // JavaScript function to redirect to a specific page
+    function redirectToPage(pageUrl) {
+        window.location.href = pageUrl;
+    }
+</script>
+</body>
+</html>
