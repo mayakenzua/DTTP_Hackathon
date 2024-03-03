@@ -16,10 +16,11 @@ header {
 
 .navImg {
     width: 200px; /* Adjust the size of your logo */
-    height: 200px; /* Adjust the size of your logo */
+    height: 150px; /* Adjust the size of your logo */
     position:absolute;
     display: flex;
     left: 0;
+    top: 0;
     margin-top: 0;
 }
 
@@ -30,19 +31,22 @@ nav {
     text-align: center;
     display: flex;
     justify-content: center;
+    font-size: medium;
 }
 
 
 nav a {
     color: #fff;
     text-decoration: none;
-    padding: 50px;
-    font-size: 26px; /* Adjust font size as needed */
+    padding: 28px;
+    margin-left: 35px;
+    margin-right: 35px;
+    font-size: 20px; /* Adjust font size as needed */
 }
 
 
 section {
-    padding: 20px;
+    padding: 10px;
     text-align: center;
 }
 
@@ -52,7 +56,7 @@ section {
     top: 20px;
     right: 20px;
     background-color: #fff;
-    border-radius: 50%;
+    border-radius: 100%;
     padding: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -95,34 +99,33 @@ section {
 
 
 .image-card {
+    float: left;
+    text-align: center;
     width: 500px;
     height: 300px;
     margin-right: 20px;
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-    overflow: hidden;
+    overflow:unset;
+    flex: 0 0 auto; /* Prevent cards from growing to fill the container */
+    margin-right: 80px; /* Adjust margin as needed */
+    margin-bottom: 30px;
 }
 
 
 .image-card img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit:cover;
 }
 
 
 .image-container {
-    display: flex;
+    display:flex;
     overflow-x: auto; /* Enable horizontal scroll */
-    margin-top: 20px; /* Adjust margin as needed */
-}
-
-
-.image-card {
-    flex: 0 0 auto; /* Prevent cards from growing to fill the container */
-    margin-right: 80px; /* Adjust margin as needed */
-    margin-bottom: 30px;
+    height: 410px;
+    margin-bottom: 100px;
 }
 
 
@@ -153,3 +156,11 @@ footer {
     margin-left: 980px;
     height: 79vh;
 }
+
+.form .input-box {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .input-box label {
+    color: #333;
+  }
