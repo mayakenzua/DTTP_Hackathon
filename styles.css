@@ -1,14 +1,28 @@
 body {
     margin: 0;
     font-family: 'Arial', sans-serif;
+    padding: 0;
 }
+
 
 header {
     background-color: #3498db;
+    color: white;
     padding: 15px;
-    color: #fff;
     text-align: center;
+    display: flex;
 }
+
+
+.navImg {
+    width: 200px; /* Adjust the size of your logo */
+    height: 200px; /* Adjust the size of your logo */
+    position:absolute;
+    display: flex;
+    left: 0;
+    margin-top: 0;
+}
+
 
 nav {
     background-color: #2980b9;
@@ -18,32 +32,107 @@ nav {
     justify-content: center;
 }
 
+
 nav a {
     color: #fff;
     text-decoration: none;
-    padding: 10px;
-    margin: 0 10px;
+    padding: 50px;
+    font-size: 26px; /* Adjust font size as needed */
 }
+
 
 section {
     padding: 20px;
-}
-
-h2{
     text-align: center;
 }
+
+
+.search-bubble {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
 
 .horizontal-scroll {
     overflow-x: auto;
     white-space: nowrap;
     display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
+
 
 .horizontal-scroll img {
     display: inline-block;
-    margin: 10px;
+    margin-right: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Add more styles as needed */
+
+/* Change the color of the scrollbar */
+::-webkit-scrollbar {
+    width: 12px; /* Set the width of the scrollbar */
+}
+
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background-color: #007bff; /* Set the color of the scrollbar handle */
+    border-radius: 6px; /* Set the border radius of the scrollbar handle */
+}
+
+
+/* Track */
+::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Set the color of the scrollbar track */
+}
+
+
+.image-card {
+    width: 500px;
+    height: 300px;
+    margin-right: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+
+.image-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.image-container {
+    display: flex;
+    overflow-x: auto; /* Enable horizontal scroll */
+    margin-top: 20px; /* Adjust margin as needed */
+}
+
+
+.image-card {
+    flex: 0 0 auto; /* Prevent cards from growing to fill the container */
+    margin-right: 80px; /* Adjust margin as needed */
+    margin-bottom: 30px;
+}
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #3498db; /* Adjust background color as needed */
+    color: white; /* Adjust text color as needed */
+    text-align: center;
+    padding: 10px;
+}
